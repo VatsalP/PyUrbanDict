@@ -9,10 +9,9 @@ class Model:
         # TODO: logic for when keyword is None
         self.keyword = keyword
         self.link = UD_GET_URL + self.keyword
-
-    def get_data(self):
         r = requests.get(self.link)
-        return r.json(), r.status_code
+        self.data = r.json()
+        self.status = r.status_code
 
     def get_tags(self):
         pass
