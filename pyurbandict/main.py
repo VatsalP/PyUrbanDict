@@ -10,8 +10,9 @@ class Model:
         self.keyword = keyword
         self.link = UD_GET_URL + self.keyword
         r = requests.get(self.link)
-        self.data = r.json()
-        self.status = r.status_code
+        self.data, self.status_code = r.json(), r.status_code
+        self.exists = False if self.data[
+            'result_type'] == 'no_results' else True
 
     def get_tags(self):
         pass
