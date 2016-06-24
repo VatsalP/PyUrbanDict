@@ -15,6 +15,10 @@ class ModelTest(unittest.TestCase):
         m = main.Model('skndlasnikdjbksad')
         self.assertEqual(False, m.exists)
 
+    def test_multiword_keyword(self):
+        m = main.Model('ayy lmao')
+        self.assertEqual(True, m.exists)
+
 
 if __name__ == '__main__':
     unittest.main()
