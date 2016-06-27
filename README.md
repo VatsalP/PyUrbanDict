@@ -3,6 +3,11 @@ An unofficial Python wrapper to api of urbandictionary.com
 
 ### Installation
 
+Install from PYPI:
+```
+pip3 install pyurbandict
+```
+Install directly from here:
 ```
 git clone https://github.com/VatsalP/PyUrbanDict
 pip3 install -r requirements.txt
