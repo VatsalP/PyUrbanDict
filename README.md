@@ -6,6 +6,7 @@ An unofficial Python wrapper to api of urbandictionary.com
 ```
 git clone https://github.com/VatsalP/PyUrbanDict
 pip3 install -r requirements.txt
+python3 setup.py install
 ```
 
 ### Run tests
